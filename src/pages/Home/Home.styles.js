@@ -2,17 +2,18 @@ import styled from "styled-components";
 import { Grid } from "@mui/material";
 
 export const StyledContainer = styled.div`
-  padding: 16px;
   background-color: #f5f5f5;
 `;
 
 export const StyledGrid = styled(Grid)`
-  margin-top: 16px;
+  margin-top: 20px;
+  padding: 20px;
 `;
 
 export const ErrorMessage = styled.p`
   color: red;
   font-weight: bold;
+  margin-top: 20px;
 `;
 
 export const LoadingMessage = styled.p`

@@ -3,37 +3,43 @@ import { AppBar } from "@mui/material";
 
 export const NavbarContainer = styled.div`
   .search-container {
-    flex-grow: 1;
+    flex-grow: 2;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    padding: 0, 40px;
   }
 
   .search {
     display: flex;
     align-items: center;
-    width: 100%;
-    max-width: 600px;
-    background-color: white;
-    border-radius: 24px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    background-color: #f5f5f5;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
-    padding: 4px 8px;
-    margin-top: 8px;
+    padding: 2px 2px;
+    transition: box-shadow 0.3s ease;
   }
 
-  input {
+  .search:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .search-input {
     flex-grow: 1;
-    padding: 12px 16px;
-    border: none;
-    border-radius: 24px;
+    padding: 5px 5px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
     font-size: 16px;
     color: #333;
-    background-color: transparent;
-    transition: background-color 0.3s;
+    background-color: #f9f9f9;
+    transition: all 0.3s ease;
+    margin-left: 8px;
   }
 
-  input:focus {
-    background-color: #f0f0f0;
+  .search-input:focus {
+    border-color: #1976d2;
+    background-color: #ffffff;
     outline: none;
   }
 
@@ -43,10 +49,15 @@ export const NavbarContainer = styled.div`
     border-radius: 50%;
     padding: 8px;
     transition: background-color 0.3s;
+    margin-left: 50%;
+
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s ease;
   }
 
   .search-icon:hover {
-    background-color: black;
+    background-color: #1565c0;
   }
 `;
 
@@ -54,4 +65,5 @@ export const NavbarAppBar = styled(AppBar)`
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid #e0e0e0;
+  padding: 0 24px;
 `;

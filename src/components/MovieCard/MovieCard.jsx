@@ -9,8 +9,12 @@ const MovieCard = ({ title, rating, image }) => (
     <Card>
       <img src={image} alt={title} />
       <CardContent>
-        <Typography variant="h5">{title}</Typography>
-        <Typography variant="subtitle1">Rating: {rating}</Typography>
+        <Typography variant="h5" className="movie-title">
+          {title}
+        </Typography>
+        <Typography variant="subtitle1" className="movie-rating">
+          Rating: {rating}
+        </Typography>
       </CardContent>
     </Card>
   </CardContainer>
