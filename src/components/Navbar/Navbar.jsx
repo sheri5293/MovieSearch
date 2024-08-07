@@ -34,7 +34,10 @@ const Navbar = ({ onSearch }) => {
     <NavbarContainer>
       <AppBar position="static">
         <Toolbar>
-          <Typography variant="h6" noWrap>
+          <Typography
+            variant="h6"
+            style={{ flexGrow: 1, whiteSpace: "nowrap", overflow: "visible" }}
+          >
             Movie Search
           </Typography>
           <div className="search-container">

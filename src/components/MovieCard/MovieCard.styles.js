@@ -9,6 +9,7 @@ export const CardContainer = styled.div`
   border-radius: 16px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
+  background-color: #fff;
 
   &:hover {
     transform: translateY(-10px);
@@ -22,6 +23,8 @@ export const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     height: 100%;
+    box-shadow: none;
+    border: none;
   }
 
   img {
